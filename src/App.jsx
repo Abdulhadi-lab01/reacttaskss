@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import About from "./views/About";
 import Home from "./views/Home";
@@ -12,7 +12,7 @@ import Upload from "./views/Upload";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<Home />} />
@@ -26,4 +26,5 @@ const App = () => {
         </BrowserRouter>
     );
 };
+
 export default App;
