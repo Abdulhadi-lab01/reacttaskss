@@ -1,24 +1,21 @@
-import PropTypes from 'prop-types';
+import { Link } from "react-router";
 
-const MediaRow = (props) => {
-    const { item } = props;
-
+const MediaItem = ({ item, setSelectedItem }) => {
     return (
-        <tr>
+        <tr key={item.filename}>
             <td>
-                <img src={item.thumbnail} alt={item.title} />
+                <Link to="/single" state={{ item }}>
+                    Klikkaa auki
+                </Link>
+                <img src={item.thumbnail} />
             </td>
             <td>{item.title}</td>
             <td>{item.description}</td>
-            <td>{new Date(item.created_at).toLocaleString('fi-FI')}</td>
+            <td>{item.created_at}</td>
             <td>{item.filesize}</td>
             <td>{item.media_type}</td>
         </tr>
     );
 };
 
-MediaRow.propTypes = {
-    item: PropTypes.object.isRequired,
-};
-
-export default MediaRow;
+export default MediaItem;
