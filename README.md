@@ -1,1 +1,1 @@
-Open [link text here](https://users.metropolia.fi/~abdulhy/wsk-routing/) to view it in the browser.
+Open [link text here](https://users.metropolia.fi/~abdulhy/wsk-formes/) to view it in the browser.
