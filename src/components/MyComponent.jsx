@@ -4,7 +4,6 @@ const MyComponent = () => {
     const [tila, setTila] = useState("hevonen");
     const [toinenTila, setToinenTila] = useState(0);
 
-    // Sori Ilkka :(
     if (tila === "hevonen kissa") {
         return <h1>Hevonen ja kissa</h1>;
     }
