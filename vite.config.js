@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins: [react()],
-    base: '/~abdulhy/wsk-formes/',
+    base: '/~abdulhy/wsk-context/',
 })
